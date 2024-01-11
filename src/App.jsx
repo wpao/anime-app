@@ -68,9 +68,6 @@ export default function App() {
   );
 }
 
-
-
-
 function NavBar({children}){
   return (
     <nav className="nav-bar">
@@ -109,18 +106,10 @@ function NumResult({animes}){
   )
 }
 
-
-
-
-
-
-
-
-
 function Main({children}){
   return (
     <main className="main">
-      [children]
+      {children}
     </main>
   )
 }
@@ -161,22 +150,6 @@ function Anime({anime, onSelectedAnime}){
     </li>
   )
 }
-
-
-
-
-// function SelectedBox({selectedAnime}){
-//   const [isOpen2, setIsOpen2] = useState(true);
-
-//   return (
-//     <div className="box">
-//       <button className="btn-toggle" onClick={() => setIsOpen2((open) => !open)}>
-//         {isOpen2 ? '–' : '+'}
-//       </button>
-//       {isOpen2 && <AnimeDetail selectedAnime={selectedAnime} />}
-//     </div>
-//   )
-// }
 
 function AnimeDetail({selectedAnime}){
   return (
